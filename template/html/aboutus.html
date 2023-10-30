@@ -1,0 +1,373 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>About Us - Your Website Name</title>
+  <link rel="stylesheet" href="{%static 'css/aboutus.css' %}">
+  <style type="text/css">
+    body {
+
+      height: 100%;
+      position: relative;
+
+    }
+
+    body {
+
+
+      /* background-image:url("../images/backgroundaboutus.png");*/
+      background-position: center;
+      background-size: cover;
+
+    }
+
+    #contact-message {
+      position: absolute;
+      top: 108px;
+      right: 20px;
+      color: #4CAF50;
+      font-size: 14px;
+    }
+
+    #contact-button {
+      position: absolute;
+      top: 55px;
+      right: 20px;
+      padding: 10px 35px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 3px;
+      font-size: 18px;
+    }
+
+    .member-info h2 {
+      font-size: 40px;
+    }
+
+    .member-info p {
+      font-size: 30;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 350px;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      border-radius: 3px;
+      z-index: 999;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.7s ease-in-out;
+    }
+
+    .contact-form.visible {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .contact-form label {
+      display: inline-block;
+      width: 100px;
+      text-align: left;
+      margin-right: 10px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      display: block;
+      margin-bottom: 10px;
+      padding: 5px;
+      width: 300px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      font-size: 16px;
+    }
+
+    .contact-form input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      padding: 10px 20px;
+      border-radius: 3px;
+      font-size: 16px;
+    }
+
+    .contact-form input[type="submit"]:hover {
+      background-color: #3e8e41;
+    }
+
+    .contact-form input[type="submit"]:focus {
+      outline: none;
+    }
+
+    .member {
+
+      margin: 10px 0;
+      align-items: center;
+      position: relative;
+      padding-left: 100px;
+      display: flex;
+      justify-content: start;
+      padding: 10px;
+      padding-bottom: 10px;
+    }
+
+    .member img {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      border-radius: 50%;
+      margin-right: 0px;
+      background-size: cover;
+      height: 220px;
+      width: 220px;
+      align-items: flex-end;
+    }
+
+    .member-info {
+      flex-grow: 1;
+      flex-basis: 25%;
+      padding-right: 60px;
+      align-items: flex-start;
+
+
+    }
+
+    .member-name {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .member-role {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .member-contact {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    /* .circle {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-color: lightgray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        padding-left: 500px;*/
+
+
+    .pic {
+      flex-basis: 25%;
+    }
+
+    .table {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      border: none;
+    }
+
+    .button {
+      background-color: #4CAF50;
+      /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+
+
+    a {
+      display: flex;
+      font-family: Outfit;
+      display: inline-block;
+      padding: 10px;
+      font-size: 20px;
+      text-decoration: none;
+      position: relative;
+    }
+
+    div.div1 {
+      margin: 10px 60px;
+    }
+
+    div.div1 p {
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <header1>
+    <!--Logo-->
+    <a href="{% url 'index' %}"><img src="{% static 'images/lastrada.svg' %}" alt="LaStrada Logo"></a>
+    <!--Navigation-->
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="aboutus.html" class="active">About Us</a></li>
+        <li><a href="product_camera.html">Products</a></li>
+        <li><a href="research.html">Research</a></li>
+      </ul>
+
+    </nav>
+  </header1>
+  <header>
+    <h1>About Us</h1>
+    <div class="div1">
+      <p>Memories are the ethereal keeper of our existence. A chamber where our treasured past resides. What better way
+        to store them than photos? Technology is advancing at a rapid pace where, keeping up with the latest gadgets is
+        near impossible. La Strada is a place where you can find the latest gadgets for your camera. We excel at
+        providing you exactly what you want at the best price!! We offer equipment’s such as the latest lenses, tripods,
+        microphones. </p>
+    </div>
+  </header>
+  <main>
+    <section>
+      <h1 align="center" style="font-family: 'Havana';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 100px;
+      line-height: 170px;
+      background: linear-gradient(180deg, #8A6DFF 22.58%, #CE8D4F 67.73%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-align: center;
+      margin: 0;">Team Members</h1>
+      <div class="All_members">
+
+        <table class="table">
+
+          <tr>
+            <th>
+              <div class="member">
+                <div class="pic"> <img src="../images/Aakarshan.png"></div>
+                <div class="member-info">
+                  <h2 class="member-name">Aakarshan Khadka</h2>
+                  <p class="member-role">Marketting Head</p>
+                  <p class="member-contact">akarshankhadka5@gmail.com &bull; 9860897618</p>
+                  <a href="cv_aakarshan.html#Aakarshan-Khadka"><button type="button">Open CV</button></a>
+                </div>
+              </div>
+            </th>
+            <th>
+              <div class="member">
+                <div class="pic"><img src="../images/Sushant.jpg"></div>
+                <div class="member-info">
+                  <h2 class="member-name">Sushant Hona</h2>
+                  <p class="member-role">UI/UX Head</p>
+                  <p class="member-contact">sushanthona29@gmail.com &bull; 9843763894</p>
+                  <a href="cv_sushant.html#Sushant-Hona"><button type="button">Open CV</button></a>
+                </div>
+              </div>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <div class="member">
+                <div class="pic"><img src="../images/Nishh.jpg"></div>
+                <div class="member-info">
+                  <h2 class="member-name">Nischal Shrestha</h2>
+                  <p class="member-role">Developer</p>
+                  <p class="member-contact">nischal29@gmail.com &bull; 9851069923</p>
+                  <a href="cv_nischal.html#Neshchal"><button type="button">Open CV</button></a>
+                </div>
+              </div>
+            </th>
+            <th>
+              <div class="member">
+                <div class="pic"><img src="../images/Ronak.jpg"></div>
+                <div class="member-info">
+                  <h2 class="member-name">Ronak Krishna Shrestha</h2>
+                  <p class="member-role">CEO</p>
+                  <p class="member-contact">ronakkrishna10@gmail.com &bull; 9851087924</p>
+                  <a href="cv_ronak.html#Ronak"><button type="button">Open CV</button></a>
+                </div>
+              </div>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <div class="member">
+                <div class="pic"><img src="../images/Tsewang.jpg"></div>
+                <div class="member-info">
+                  <h2 class="member-name">Tsewang Norbu</h2>
+                  <p class="member-role">Blogger</p>
+                  <p class="member-contact">tsewangnorbu@gmail.com &bull; 9843365898</p>
+                  <a href="cv_tsewang.html#Tsewang"><button type="button">Open CV</button></a>
+                </div>
+              </div>
+            </th>
+          </tr>
+      </div>
+
+      </table>
+    </section>
+  </main>
+  <section>
+    <div>
+      <h1 align="center">Effect of Technology</h1>
+      <p>
+        Technology has had a profound impact on society, reshaping various aspects of our lives. It has brought about
+        transformative advancements in communication, healthcare, transportation, and education. By connecting people
+        globally, technology has facilitated the rapid exchange of information and ideas. Additionally, it has enhanced
+        efficiency and productivity through streamlined processes and automation. Nonetheless, technology has also
+        introduced challenges like privacy concerns, job displacement, and digital inequality. Nevertheless, the overall
+        effect of technology remains overwhelmingly positive, enriching our lives, expanding possibilities, and ushering
+        in a more interconnected and innovative future.
+
+
+      </p>
+      <h1 align="center">
+        Effect of photos on the Enviroment
+      </h1>
+      <p>
+        While photos are one of if not the best way to store one’s precious memories, it obviously asks the question at
+        what cost? How good is it for the environment for us to print and store so many photos. While yes, the chemicals
+        used in print of these photos are very minimally damaging to the environment, the paper itself does not pose
+        such a threat. Photo papers typically are biodegradable within 4-8 weeks. If we make sure we dispose of them in
+        a correct place these should not cause an issue.
+      </p>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-icons">
+      <div class="footer-a"><a href=""><img src="/images/instagram.png" alt=""></a></div>
+      <div class="footer-a"><a href=""><img src="/images/twitter.png" alt=""></a></div>
+      <div class="footer-a"><a href=""><img src="/images/linkedin.png" alt=""></a></div>
+      <div class="footer-a"><a href=""><img src="/images/youtube.png" alt=""></a></div>
+    </div>
+    <div class="footer-text">
+      <p>© 2021 La Strada. All Rights Reserved by London Metro University.</p>
+      <p>Privacy Policy</p>
+      <button>
+        <a href="{% url 'form1' %}">Feedback Form</a>
+      </button>
+  </footer>
+</body>
+
+</html>

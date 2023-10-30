@@ -1,0 +1,331 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    background: transparent;
+    font-family: "Cinzel";
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 26px;
+    border: 1.5px solid white;
+    border-radius: 100px;
+    padding: 10px 20px;
+    transition: 1s;
+}
+
+a:hover {
+    color: black;
+    background: linear-gradient(180deg, #8A6DFF 22.58%, #CE8D4F 67.73%);
+    border: none;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.categories {
+    margin: 70px 0;
+
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.col-1 {
+    flex-basis: 20%;
+    min-width: 80px;
+    margin-bottom: 30px;
+
+}
+
+.col-1 img {
+    width: 80%;
+}
+
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding: left 5px;
+}
+
+.col-2 {
+    flex-basis: 20%;
+    padding: 10px;
+    margin-bottom: 50px;
+    min-width: 200px;
+    transition: transform 0.5s;
+}
+
+.col-2 img {
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+
+.title::after {
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+h4 {
+    font-family: "Bebas Neue";
+    color: aliceblue;
+    font-weight: normal;
+}
+
+.col-2 p {
+    font-size: 14px;
+}
+
+.rating {
+    color: #ff523b;
+}
+
+.col-2:hover {
+    transform: translateY(-5px);
+}
+
+.col-3 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-3 img {
+    max-width: 100%;
+    padding: 50px 0;
+
+}
+
+.offer {
+    background: radial-gradient(#fff, #ffd6d6);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+
+.col-3 .offer-img {
+    padding: 50px;
+}
+
+small {
+    color: #555
+}
+
+.btn {
+    display: inline;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+
+}
+
+/*---all products---*/
+.row-2 {
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+
+select {
+    border: 1px solid #555;
+    padding: 5px;
+}
+
+.col-4 {
+    flex-basis: 30%;
+    min-width: 80px;
+    margin-bottom: 10px;
+    align-items: end;
+    transition: transform 0.5s;
+
+}
+
+.col-4 img {
+    width: 80%;
+}
+
+.col-4:hover {
+    transform: translateY(-5px);
+}
+
+.page-btn h3 {
+
+    margin: 0 auto 80px;
+
+
+}
+
+.row h3 {
+    display: inline-block;
+    border: 1px solid gray;
+    margin-left: 10px;
+    width: 90px;
+    height: 40px;
+    text-align: center;
+    line-height: 40 px;
+    cursor: pointer;
+
+
+}
+
+.col-5 {
+    flex-basis: 25%;
+    min-width: 80px;
+    margin-bottom: 10px;
+    align-items: end;
+    transition: transform 0.5s;
+}
+
+.col-5:hover {
+    transform: translateY(-5px);
+    color: #ff523b;
+}
+
+.center {
+    align-items: center;
+}
+
+/*--single product details--*/
+.single-product {
+    margin-top: 80px;
+}
+
+.single-product .col-3 img {
+    padding: 0;
+
+}
+
+.single-product .col-3 {
+    padding: 20px;
+
+}
+
+.single-product h2 {
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+
+}
+
+.single-product input {
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid#555;
+}
+
+input:focus {
+    outline: none;
+}
+
+/*--so that the border of input does not change when the number is changed*/
+
+.single-product fa {
+    color: #ff523b;
+    margin-left: 10px;
+}
+
+.small-img-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+/*--cart items*/
+
+.cart-page {
+    margin: 80px auto;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+th {
+    text-align: left;
+    padding: 5px;
+    color: aliceblue;
+    background: #ff523b;
+    font-weight: normal;
+}
+
+.td {
+    padding: 10px 5px;
+
+}
+
+.td input {
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+
+td a {
+    color: #ff523b;
+    font-size: 12px;
+}
+
+td img {
+    width: 80px;
+    margin-right: 10px;
+    height: 80px;
+}
+
+.total-price {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.total-price table {
+    border-top: 3px solid #ff523b;
+    width: 100px;
+    max-width: 400px;
+}
+
+td:last-child {
+    text-align: right;
+
+}
+
+th:last-child {
+    text-align: right;
+
+}
+
+.rating img {
+    width: 30px;
+}

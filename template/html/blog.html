@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head><!--  -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog</title>
+    <link rel="stylesheet" href="../css/blog.css">
+</head>
+
+<body> <!--  -->
+    <section class="blog"> <!-- contains everything -->
+        <header>
+            <a href="#"><img src="/images/lastrada.svg" alt="LaStrada Logo"></a>
+
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="product_camera.html">Products</a></li>
+                    <li><a href="research.html">Research</a></li>
+                </ul>
+
+            </nav>
+        </header>
+        <div class="container"> <!-- contains everthing besides nav and footer -->
+            <div class="top"> <!-- Seperates the top part and the conclusion  -->
+                <div class="left">
+                    <!-- contains Camera image and Impact Of Technology While Selling Camera Equipment section-->
+
+
+                    <div class="slideContainer">
+                        <diV id="slideEffect"><img src="../images/tech1.jpg" style=" height: 90%;">
+                        </div>
+                    </diV>
+                    <script>
+                        var imagePath = ['../images/a.png', '../images/b.png', '../images/tech1.jpg', '../images/tech2.jpg', '../images/tech3.jpg']
+                        var container = document.getElementById("slideEffect");
+                        var index = 0;
+                        setInterval(slide, 3500);
+                        function slide() {
+                            if (
+                                index < imagePath.length
+                            ) {
+                                index = index + 1
+                            }
+                            else {
+                                index = 1;
+                            }
+                            container.innerHTML = "<img src=" + imagePath[index - 1] + ">";
+                        }
+                    </script>
+                    <div class="impact">
+                        <!-- contains the Imapact of Technology while Selling Camera Equipment section -->
+                        <h1>Impact Of Technology While Selling Camera Equipment</h1>
+                        <p>
+                            The impact of technology in the field of camera sales has been significant. With the rise of
+                            e-commerce platforms and online marketplaces, it has become easier for consumers to research
+                            and compare different camera models, features, and prices. This has also led to increased
+                            competition among camera manufacturers, with companies investing heavily in research and
+                            development to create innovative products that meet the evolving needs of consumers.<span
+                                id="dots">...</span>
+                            <span id="more">
+                                Additionally, advancements in technology have allowed camera manufacturers to
+                                incorporate new features and capabilities in their products, such as enhanced image
+                                quality, faster processing speeds, and more intuitive user interfaces. This has created
+                                a demand for more advanced and sophisticated cameras, leading to the development of
+                                high-end, professional-grade models.<br>
+                                Moreover, the integration of social media and wireless connectivity technology has also
+                                impacted camera sales. Many consumers are now looking for cameras that allow them to
+                                instantly share their photos and videos on social media platforms or via email, leading
+                                to increased demand for cameras with built-in Wi-Fi or Bluetooth capabilities.
+                            </span>
+                        </p>
+                        <button type="button" class="button" id="read" onclick="read()" style="width: auto;
+                            height: auto;
+                            display: flex;
+                            position: relative;
+                            justify-content: center;;">Read More</button>
+                        <!-- Read More button -->
+                        <script type="text/javascript">
+                            var i = 0;
+                            function read() {
+                                if (!i) {
+                                    document.getElementById("more").style.display = "inline";
+                                    document.getElementById("dots").style.display = "none";
+                                    document.getElementById("read").innerHTML = "Read less";
+                                    i = 1;
+                                }
+                                else {
+                                    document.getElementById("more").style.display = "none";
+                                    document.getElementById("dots").style.display = "inline";
+                                    document.getElementById("read").innerHTML = "Read more";
+                                    i = 0;
+                                }
+                            }
+                        </script>
+                    </div>
+                </div>
+                <div class="content">
+                    <!-- Right side content section which contains Teachnology, Postive and Negative secitons -->
+                    <div class="technology"><!-- Technology section -->
+                        <h1>Technology</h1>
+                        <p>Technology has had a positive impact on the field of photography by making it more accessible
+                            and user-friendly. Digital cameras, in particular, have revolutionized the way people take
+                            photos, as they allow anyone to capture high-quality images without requiring expensive
+                            equipment or specialized knowledge. Additionally, features like auto-focus, automatic
+                            exposure settings, and image stabilization make it easier for even novice photographers to
+                            take stunning shots with minimal effort.<span id="dots1">...</span>
+                            <span id="more1">
+                                Furthermore, modern cameras come equipped with a range of innovative features that
+                                enable photographers to capture unique and creative shots. For example, facial
+                                recognition, object tracking, and panoramic mode are just a few of the many features
+                                that allow photographers to experiment with different techniques and styles.
+                                Additionally, with the integration of wireless and connectivity technology, sharing
+                                photos and videos has become easier than ever before. This allows photographers to
+                                connect with audiences and showcase their work in real-time, fostering a sense of
+                                community and promoting creativity in the field of photography.
+                            </span>
+                        </p>
+                        <button type="button" class="button" id="read1" onclick="read1()" style="width: auto;
+                            height: auto;
+                            display: flex;
+                            position: relative;
+                            justify-content: center;">Read More</button>
+                        <!-- Read More Button -->
+                        <script type="text/javascript">
+                            var i1 = 0;
+                            function read1() {
+                                if (!i1) {
+                                    document.getElementById("more1").style.display = "inline";
+                                    document.getElementById("dots1").style.display = "none";
+                                    document.getElementById("read1").innerHTML = "Read less";
+                                    i1 = 1;
+                                }
+                                else {
+                                    document.getElementById("more1").style.display = "none";
+                                    document.getElementById("dots1").style.display = "inline";
+                                    document.getElementById("read1").innerHTML = "Read more";
+                                    i1 = 0;
+                                }
+                            }
+                        </script>
+                    </div>
+                    <div class="positive"> <!-- Positive Section -->
+                        <h1>Positive</h1>
+                        <p>Advancements in camera technology have led
+                            to the development of high-quality cameras that
+                            can capture stunning images and videos with can capture stunning image.In addition,
+                            technology has enabled cameras to become smaller and more portable, allowing photographers
+                            to carry their equipment with them wherever they go. This has expanded the possibilities for
+                            capturing unique and candid shots, as photographers can now take their cameras to places
+                            that were previously inaccessible or difficult to navigate.<span id="dots2">...</span>
+                            <span id="more2">
+                                it convenient for people to purchase camera equipment
+                                from anywhere in the world. Technology has made
+                                it easier for buyers to research and evaluate camera
+                                equipment before making a purchase. They can read
+                                online product reviews, watch video reviews, and
+                                compare prices and features to make an informed decision.
+                            </span>
+                        </p>
+                        <button type="button" class="button" id="read2" onclick="read2()" style="width: auto;
+                            height: auto;
+                            display: flex;
+                            position: relative;
+                            justify-content: center;">Read More</button>
+                        <script type="text/javascript">
+                            var i2 = 0;
+                            function read2() {
+                                if (!i2) {
+                                    document.getElementById("more2").style.display = "inline";
+                                    document.getElementById("dots2").style.display = "none";
+                                    document.getElementById("read2").innerHTML = "Read less";
+                                    i2 = 1;
+                                }
+                                else {
+                                    document.getElementById("more2").style.display = "none";
+                                    document.getElementById("dots2").style.display = "inline";
+                                    document.getElementById("read2").innerHTML = "Read more";
+                                    i2 = 0;
+                                }
+                            }
+                        </script>
+                    </div>
+                    <div class="negative"> <!-- Negative Section -->
+                        <h1>Negative</h1>
+                        <p>Negative aspect of technology in cameras is the rise of deepfake technology. With deepfakes,
+                            it is possible to manipulate images and videos to create false or misleading content,
+                            leading to the spread of misinformation and potentially causing harm. Additionally, the
+                            convenience of digital storage has led to issues of data privacy and security, as sensitive
+                            information can be easily accessed or hacked if not properly protected.<span
+                                id="dots3">...</span>
+                            <span id="more3">
+                                Overall, while technology in cameras offers numerous benefits, it is important to be
+                                aware of its potential negative impacts and use it responsibly.Additionally, the
+                                reliance on technology and automation in cameras has led to a decrease in the need for
+                                human skill and creativity. Some argue that this has led to a homogenization of
+                                photography, with many images looking similar and lacking the unique style and vision of
+                                individual photographers.
+                            </span>
+                        </p>
+                        <button type="button" class="button" id="read3" onclick="read3()" style="width: auto;
+                            height: auto;
+                            display: flex;
+                            position: relative;
+                            justify-content: center;">Read More</button>
+                        <!--Read More Button  -->
+                        <script type="text/javascript">
+                            var i3 = 0;
+                            function read3() {
+                                if (!i3) {
+                                    document.getElementById("more3").style.display = "inline";
+                                    document.getElementById("dots3").style.display = "none";
+                                    document.getElementById("read3").innerHTML = "Read less";
+                                    i3 = 1;
+                                }
+                                else {
+                                    document.getElementById("more3").style.display = "none";
+                                    document.getElementById("dots3").style.display = "inline";
+                                    document.getElementById("read3").innerHTML = "Read more";
+                                    i3 = 0;
+                                }
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="conclusion"> <!-- Conclusion Section -->
+                <h1>Conclusion</h1>
+                <p>In conclusion, camera technology has come a long way over the years, and today we have access to some
+                    of the most advanced cameras and accessories ever made. Whether you are a professional photographer,
+                    a hobbyist, or someone who just loves to capture memories, there is a camera and equipment that is
+                    perfect for you. At our website, we offer a wide selection of high-quality camera equipment, from
+                    cameras and lenses to tripods and filters, at competitive prices. We understand that buying camera
+                    equipment can be overwhelming, which is why we provide detailed product descriptions, customer
+                    reviews, and expert advice to help you make an informed decision. We are committed to providing
+                    excellent customer service and ensuring that you have a positive shopping experience. So, whether
+                    you are looking for the latest camera technology or just want to upgrade your current setup, we have
+                    everything you need to take your photography to the next level.</p>
+            </div>
+        </div>
+        <hr>
+        <footer>
+            <div class="footer-icons">
+                <div class="footer-a"><a href=""><img src="/images/instagram.png" alt=""></a></div>
+                <div class="footer-a"><a href=""><img src="/images/twitter.png" alt=""></a></div>
+                <div class="footer-a"><a href=""><img src="/images/linkedin.png" alt=""></a></div>
+                <div class="footer-a"><a href=""><img src="/images/youtube.png" alt=""></a></div>
+            </div>
+            <div class="footer-text">
+                <p>© 2021 La Strada. All Rights Reserved by London Metro University.</p>
+                <p>Privacy Policy</p>
+        </footer>
+
+    </section>
+</body>
+
+</html>

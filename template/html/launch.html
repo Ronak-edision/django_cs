@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/launch.css">
+</head>
+
+<body>
+
+    <section class="container">
+        <div class="content">
+            <h1>DJI Inspire 3</h1>
+            <p>Master the Unseen</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="content">
+            <h1>Spacial Intelligence </h1>
+            <p>Beyond Boundaries
+                High-Mobility Precision Flight System</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="content">
+            <h1>Full-Frame 8K Imaging System</h1>
+            <p>A Stunning New Aerial Perspective</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="content">
+            <h1>Ultra-Wide
+                Night-Vision </h1>
+            <p>FPV Camera</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="content">
+            <h1><a href="/html/product_detail_page.html">BUY NOW</a></h1>
+            <p> </p>
+        </div>
+    </section>
+
+    <div id="set-height"></div>
+
+    <video id="v0" tabindex="0" , autobuffer preload>
+        <source type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' src="/images/vid1.mp4">
+        </source>
+    </video>
+    <!--Video Reference: Official youtube video of DJI Inspire
+    https://www.youtube.com/watch?v=T5IgH__lL7I
+    -->
+    <script src="../js/launch.js"></script>
+    <script>
+
+        enterView({
+            selector: 'section',
+            enter: function (el) {
+                el.classList.add('entered');
+            }
+        })
+
+        var frameNumber = 0, // start video at frame 0
+            // lower numbers = faster playback
+            playbackConst = 1500,
+            // get page height from video duration
+            setHeight = document.getElementById("set-height"),
+            // select video element         
+            vid = document.getElementById('v0');
+        // var vid = $('#v0')[0]; // jquery option
+
+        // dynamically set the page height according to video length
+        vid.addEventListener('loadedmetadata', function () {
+            setHeight.style.height = Math.floor(vid.duration) * playbackConst + "px";
+        });
+
+
+        // Use requestAnimationFrame for smooth playback
+        function scrollPlay() {
+            var frameNumber = window.pageYOffset / playbackConst;
+            vid.currentTime = frameNumber;
+            window.requestAnimationFrame(scrollPlay);
+        }
+
+        window.requestAnimationFrame(scrollPlay);
+
+    </script>
+</body>
+
+</html>

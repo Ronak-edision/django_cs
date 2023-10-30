@@ -1,0 +1,128 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="author" content="Ness">
+  <link rel="stylesheet" href="{% static 'css/Form1.css'}">
+  <title>
+    Form Validation
+  </title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Create two equal columns that floats next to each other */
+    .boxcolumn {
+      float: left;
+      width: 50%;
+      padding: 10px;
+
+    }
+
+    /* Clear floats after the columns */
+    .boxrow:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+
+</head>
+
+
+<body>
+
+  <video autoplay muted loop id="myVideo">
+    <source src=" static 'images/purple.mp4' " type="video/mp4">
+  </video>
+
+
+
+
+  <div class=" formheading">
+    <h3>Contact Us</h3>
+  </div>
+
+  <div class="formcontainer">
+
+    <form name="messageForm" method="POST" action="form1" onsubmit="return validateForm()">
+      {% csrf_token %}
+      <p>First Name:
+        <input type="text" name="fname" id="fname" placeholder="*Your first name required*" />
+      </p>
+
+
+      <p>Last Name:
+        <input type="text" name="lname" id="lname" placeholder="*Your second name required*">
+      </p>
+
+
+      <p>Mobile No:
+        <input type="text" name="mobileNo">
+      </p>
+
+
+      <div class="boxrow">
+        <div class="boxcolumn">
+
+          <p>Age:
+            <input type="number" name="age">
+          </p>
+        </div>
+        <div class="boxcolumn">
+
+          <p>
+          <p>Gender:
+            <input type="radio" name="gender" value="male" checked>Male<input type="radio" name="gender"
+              value="female">Female
+          </p>
+          </p>
+        </div>
+      </div>
+
+
+
+
+
+
+      <p>Message:
+        <textarea name="message" rows="10" cols="61" placeholder="Enter Message"></textarea>
+      </p>
+
+
+      <p>Email:
+        <input type="text" name="email" id="email" placeholder="*name@domain.com* required">
+      </p>
+
+
+
+
+
+      <p class="formsubmit"><input type="submit" value="Submit" id="submit" class="stop"></p>
+    </form>
+    <script>
+      function validateForm() {
+        var fname = document.forms["messageForm"]["fname"].value;
+        var lname = document.forms["messageForm"]["lname"].value;
+        var email = document.forms["messageForm"]["email"].value;
+
+        if (fname == "" || lname == "" || email == "") {
+          alert("Please fill in the mandatory fields");
+          return false;
+        }
+        else {
+          alert("Thank you for your valuable feedback.")
+        }
+      }
+
+    </script>
+
+
+  </div>
+</body>
+
+
+</html>

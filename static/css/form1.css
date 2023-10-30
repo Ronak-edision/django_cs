@@ -1,0 +1,131 @@
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    margin:0 40%;
+    background-color: #b709e8;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+    
+  }
+  
+  
+
+
+.formcontainer
+{
+margin: auto;
+color: #fff;
+width: 40%;
+border-radius: 10px;
+background-color: rgba(184, 180, 180, 0);
+padding: 20;
+
+}
+
+.formheading
+{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: larger;
+    color: #ddd;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .bg-image {
+    /* The image used */
+    background-image: url("photographer.jpg");
+    
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    
+    /* Full height */
+    height: 100%; 
+    
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Position text in the middle of the page/image */
+  .bg-text {
+    background-color: rgb(241, 233, 233); /* Fallback color */
+    background-color: rgba(249, 243, 243, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+  }
+ 
+  #myVideo {
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    min-width: 100%;
+    min-height: 100%;
+    filter:blur(5px)
+  }
+  
+  /* Add some content at the bottom of the video/page */
+  .content {
+    position: relative;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Style the button used to pause/play the video */
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }

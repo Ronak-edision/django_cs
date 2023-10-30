@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="author" content="Ness">
+  <meta name="description" content="HTML document">
+  <meta name="keywords" content="html/css/javascript">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../css/research.css">
+
+
+  <title>Research Page</title>
+  <style>
+    body {
+      font-family: monospace;
+      line-height: 30px;
+      font-size: 18px;
+    }
+
+
+    h1 {
+      text-align: center;
+      font-size: 52px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 46px;
+    }
+
+    h3 {
+      margin: 0 0;
+      padding: 0;
+      text-align: left;
+      font-size: 20px;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .content2 {
+      max-width: 1200px;
+      margin: 0 auto;
+
+    }
+
+    .content3 {
+
+      padding: 0 40px 0;
+      margin: 0 auto;
+      font-weight: bolder;
+
+    }
+
+    .content4 {
+      font-weight: normal;
+      margin: 0 auto;
+    }
+
+
+
+    /*Table Size*/
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 8px;
+      text-decoration: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+    /*Table Design*/
+
+
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Create two equal columns that floats next to each other */
+    .boxcolumn {
+      float: center;
+      width: 50%;
+      padding: 10px;
+
+    }
+
+    /* Clear floats after the columns */
+    .boxrow:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .images {
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+
+    }
+
+    .photo {
+      max-width: 100%;
+      height: 100%;
+      position: relative;
+      align-items: center;
+    }
+
+    .photo img {
+      width: 100%;
+      height: 100%;
+      align-items: center;
+    }
+  </style>
+</head>
+
+
+
+<body>
+  <header>
+    <!--Logo-->
+    <a href="index.html"><img src="/images/lastrada.svg" alt="LaStrada Logo"></a>
+    <!--Navigation-->
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="product_camera.html">Products</a></li>
+        <li><a href="=research.html" class="active">Research</a></li>
+      </ul>
+
+    </nav>
+  </header>
+  <div>
+    <!-- Dividing the division into two divsions for table of Contents-->
+
+
+
+    <div>
+      <h1>Table of Contents</h1>
+      <table>
+        <tr>
+          <th> S.N. </th>
+          <th> Contents</th>
+
+        </tr>
+
+        <tr>
+          <td>I.</td>
+          <td><a href="#Part1">Research</a></td>
+
+        </tr>
+
+        <tr>
+          <td>II.</td>
+          <td><a href="#Part2">Process</a></td>
+
+        </tr>
+
+        <tr>
+          <td>III.</td>
+          <td>
+            <ol>
+              <li>
+                <a href="#Part3">LayOuts</a>
+                <ol type="i">
+                  <li>Requirement & Approach</li>
+                  <li>Research </li>
+                  <li>Analysis</li>
+                  <li>Conclusion</li>
+
+                </ol>
+
+              <li>
+                <a href="#Part4">Ratings</a>
+                <ol type="i">
+                  <li>Requirement & Approach</li>
+                  <li>Research</li>
+                  <li>Analysis</li>
+                  <li>Conclusion</li>
+                </ol>
+              </li>
+
+              <li>
+                <a href="#Part5">Add to Cart</a>
+                <ol type="i">
+                  <li>Requirement & Approach</li>
+                  <li>Research</li>
+                  <li>Analysis</li>
+                  <li>Conclusion</li>
+                </ol>
+              </li>
+
+              <li>
+                <a href="#Part6">Form Validation</a>
+                <ol type="i">
+                  <li>Requirement & Approach</li>
+                  <li>Research</li>
+                  <li>Analysis</li>
+                  <li>Conclusion</li>
+                </ol>
+              </li>
+
+              <li>
+                <a href="#Part7">Linear Gradient</a>
+                <ol type="i">
+                  <li>Requirement & Approach</li>
+                  <li>Research</li>
+                  <li>Analysis</li>
+                  <li>Conclusion</li>
+                </ol>
+              </li>
+
+            </ol>
+          </td>
+
+
+          <td>5</td>
+        </tr>
+
+        <tr>
+          <th>IV.</th>
+          <th><a href="#Part8">Summary</a></th>
+          <th>10</th>
+        </tr>
+
+
+      </table>
+    </div>
+
+  </div>
+  </div>
+  </div>
+
+  <h2>LaStrada</h2>
+  <div>
+    <h3 id="Part1">I. Research</h3>
+    <div class="content">
+      <!--"Strong" is an HTML formatting tag which allows us to represent world according to our needs-->
+      <p><strong>Introduction:</strong>
+        <br>
+        We would like to express our gratitude to our course instructor Pratik Panta sir and Lecturer Hrishav Tandulkar
+        Sir
+        for their guidance and support throughout this project. We would also like to thank our classmates for their
+        valuable feedback and suggestions.
+        <br>
+
+        <strong>Abstract</strong>
+        <br>
+
+        This coursework involves designing and developing an e-commerce website for a store that sells various camera
+        equipment.
+        Among many steps research and design were one of the initial steps implemented. This section explains few
+        components used and the websites referenced throughout the design and development. Furthermore this section
+        explains
+        the research and
+        analysis performed to arrive at the said conclusion.
+
+      </p>
+    </div>
+
+  </div>
+
+
+  <div>
+    <h3 id="Part2">II. Process</h3>
+    <div class="content">
+
+      <p>
+        This section involves the thinking process involved while discussing the immplementatin of the project.
+        At first the website requirements were outlined by understanding the terms and condition of the coursework.
+        A proper research was then conducted on the said requirement followed by analysis to
+        understand the component used in the referenced website which allowed us to implement the said tool in our own
+        website.
+        At the end of the research and its immplementation a conclusion was delivered to discuss the learning curve
+        during the process.
+
+      </p>
+    </div>
+
+  </div>
+
+
+  <div class="content2">
+    <h3 id="Part3">1. Layouts</h3>
+    <div>
+      It is the process of arranging the web contents on rows or columns or both.
+      <div class="content3">
+        Requirements
+        <p class="content4">The product needs to be arranged on same column so that the products can be put on display
+          for sale.. </p>
+      </div>
+
+      <div class="content3">
+        Research
+        <p class="content4"> Different methods of layout such as grid, flex, float, etc can be used as per the need of
+          our website. Many
+          online website were studied and among them
+          <a href="https://www.bhphotovideo.com/c/browse/Photography/ci/989/N/4294538916?origSearch=camera&sts=red">
+            BnH</a> an e-commerce website was picked for the purpose of selection of
+          layout style.
+        </p>
+      </div>
+
+      <div class="content3">
+        Analysis
+
+
+
+        <div class="images">
+          <div class="photo">
+            Source Website: BnH Photo Video Audio
+            <fig>
+              <a href="https://www.bhphotovideo.com/c/browse/Photography/ci/989/N/4294538916?origSearch=camera&sts=red">
+                <img src="../images/BnH.png" alt="images">
+              </a>
+              <figcaption style="text-align: center;"> Fig.1 BnH webpage:CSS Style </figcaption>
+            </fig>
+          </div>
+
+          <div class="photo">
+            Lastrada
+            <fig>
+              <img src="../images/FlexMethod.png" alt="images">
+              <figcaption style="text-align: center;"> Fig.2 CSS Style of Lastrada </figcaption>
+            </fig>
+          </div>
+        </div>
+        <div>
+          <ins>Similarities & Differences</ins> <br>
+          <table border="1px">
+            <tr>
+
+              <th>Similarities</th>
+              <th>Differences</th>
+            </tr>
+
+            <tr>
+
+              <td> Both websites uses flex method for the layout management. </td>
+              <td>BnH uses one single container to manage all of its product irrespective of the product type.
+                Lastrada uses different container for different products.</td>
+            </tr>
+
+
+
+          </table>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="content3">
+      Conclusion
+      <div class="content4">
+        To manage multiple product line in the same container would require more skill level and since the complexity
+        increases
+        room for errors also increases.
+        Managing the product line in different container and then in different divisions would be easy but would require
+        more
+        time.
+      </div>
+
+
+    </div>
+
+    <p>
+
+    </p>
+  </div>
+
+  </div>
+
+  <div class="content2">
+    <h3 id="Part4">2. Ratings</h3>
+
+    <div>
+      Star ratings are symbols that indicates the quality or safety of listed things, such as accommodation, roads,
+      or online listings. Star ratings can help businesses earn trust from potential customers, improve local search
+      rankings, and boost conversions.
+      <div class="content3">
+        Requirements
+        <p class="content4">Five Star rating system should be employed. They are usually displayed as a set of stars
+          (usually 5) that can be
+          clicked on to rate the product/service/content. The rating is then displayed as an average of all the ratings
+          given
+          by users. </p>
+      </div>
+
+      <div class="content3">
+        Research
+        <p class="content4">
+          <a
+            href="https://www.daraz.com.np/products/canon-eos-90d-digital-slr-camera-with-ef-s-18-135mm-f35-56-image-stabilisation-usm-lens-kit-16-gb-sd-card-black-i102398014-s1023104045.html?spm=a2a0e.searchlist.list.79.32c87a39z1R2de&search=1">
+            Daraz</a> an e-commerce website was picked for the purpose of selection of
+          rating system.
+
+          In HTML and JavaScript, there are two ways to implement a star rating system: font style
+          and image style. The font style uses a font that contains the star symbol and assigns different classes to
+          each star based on the rating.
+          The image style uses an image of a star and assigns different images to each star based on the rating.
+
+        </p>
+      </div>
+
+      <div class="content3">
+        Analysis
+
+        <div class="images">
+          <div class="photo">
+            Source Website: Daraz
+            <fig>
+              <a
+                href="https://www.daraz.com.np/products/canon-eos-90d-digital-slr-camera-with-ef-s-18-135mm-f35-56-image-stabilisation-usm-lens-kit-16-gb-sd-card-black-i102398014-s1023104045.html?spm=a2a0e.searchlist.list.79.32c87a39z1R2de&search=1">
+                <img src="../images/daraz.png" alt="images">
+              </a>
+              <figcaption style="text-align: center;"> Fig.3 Daraz webpage:CSS Style </figcaption>
+            </fig>
+          </div>
+
+          <div class="photo">
+            Lastrada
+            <fig>
+              <img src="../images/FlexMethod.png" alt="images">
+              <figcaption style="text-align: center;"> Fig.4 CSS Style of Lastrada </figcaption>
+            </fig>
+          </div>
+        </div>
+        <div>
+          <ins>Similarities & Differences</ins> <br>
+          <table border="1px">
+            <tr>
+
+              <th>Similarities</th>
+              <th>Differences</th>
+            </tr>
+
+            <tr>
+
+              <td> Users, based on their experience can rate products they purchased. </td>
+              <td>Daraz uses fontstyle from a third party source to style CSS. The star so used are images.
+                Lastrada uses Emmet Abbreviation instead of fontstyles to style the CSS of the rating star</td>
+            </tr>
+
+
+
+          </table>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="content3">
+      Conclusion
+      <div class="content4">
+        Both the image styling and font styling has its own perks and disadvantages.
+        The font style is more flexible because it allows you to change the color and size of the stars easily while the
+        image styling looks more appealing.
+
+
+      </div>
+
+      <p>
+
+      </p>
+    </div>
+
+  </div>
+
+  <div class="content2">
+    <h3 id="Part5">3. Add to Cart</h3>
+    <div>In an ecommerce website, “Add to cart” is a feature that allows customers to add products to their online
+      shopping cart when they click the “Add to cart” button. This feature acts as a mediator between the payment
+      gateways and the ecommerce website. It aids the customers in acting upon their instinct buying behavior.
+      It improves and enhances the site’s SEO and search rankings.
+      <div class="content3">
+        Requirements
+        <p class="content4">A cart button is displayed at the bottom of image container. On clicking the cart button
+          each product should be added to shopping list.
+        </p>
+      </div>
+
+      <div class="content3">
+        Research
+        <p class="content4">An online shopping cart is software that allows customers to make purchases on a website.
+          There are two types of shopping carts - hosted and self-hosted shopping carts. Hosted shopping carts are
+          off-the-shelf solutions managed by the company who created them, while self-hosted shopping carts are
+          open-source software that you can install on your own server
+          <a href="https://www.adorama.com/sr75z.html">
+            Adorama</a> an e-commerce website was picked for the purpose of selection of
+          add to cart style.
+        </p>
+      </div>
+
+      <div class="content3">
+        Analysis
+
+
+
+        <div class="images">
+          <div class="photo">
+            Source Website
+            <fig>
+              <a href="https://www.adorama.com/sr75z.html">
+                <img src="../images/AA2C.png" alt="images">
+              </a>
+              <figcaption style="text-align: center;"> Fig.5 Screenshot of Adoroma </figcaption>
+            </fig>
+          </div>
+
+          <div class="photo">
+            Lastrada
+            <fig>
+              <img src="../images/CartJS.png" alt="images">
+              <figcaption style="text-align: center;"> Fig.6 CSS Style of Lastrada </figcaption>
+            </fig>
+          </div>
+        </div>
+        <div>
+          <ins>Similarities & Differences</ins> <br>
+          <table border="1px">
+            <tr>
+
+              <th>Similarities</th>
+              <th>Differences</th>
+            </tr>
+
+            <tr>
+
+              <td> Both websites takes the selected items and add the item into the cart. </td>
+              <td>Adorama may have hosted server shopping cart as it will require more resource and time to host
+                the server demand traffic.
+                Lastrada uses local hosted shopping cart .</td>
+            </tr>
+
+
+
+          </table>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="content3">
+      Conclusion
+      <div class="content4">
+        It would be better for growing company to outsource Hosted shopping carts from a third part as it includes
+        Built-in
+        functions and arrangement for the online transactions.
+        While self-hosted shopping carts are benefitial for established companies which would allow to adhere the
+        company
+        to their established business rules and principles.
+        open-source software that you can install on your own server
+      </div>
+
+
+    </div>
+
+    <p>
+
+    </p>
+  </div>
+
+  </div>
+
+
+  <div class="content2">
+    <h3 id="Part6">4. Form Validation</h3>
+    <div>
+      Form validation is a technical process where a web-form checks if the information provided by a
+      user is correct. The form will either alert the user that they messed up and need to fix
+      something to proceed, or the form will be validated and the user will be able to continue with their registration
+      process
+      Form validation is the process of checking whether the data entered by the user in a form is correct or not.
+      It is required to prevent online form abuse by malicious users.
+      <div class="content3">
+        Requirements
+        <p class="content4">A form that accepts different input from users should be accesible to users within the
+          website.
+          A message section should be present in the form where the users can write message or grief complain.
+        </p>
+      </div>
+
+      <div class="content3">
+
+        Research
+
+        <p class="content4"> There are two different types of client-side validation on the web: Built-in form
+          validation
+          and Javascript form validation. Built in form validation uses HTML form validation features by default.
+          <a
+            href="https://www.amazon.com/ap/register?showRememberMe=true&openid.pape.max_auth_age=0&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&mobileBrowserWeblabTreatment=C&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_custrec_signin&prevRID=FR83KFF2RJAVA7TCGW19&openid.assoc_handle=usflex&openid.mode=checkid_setup&desktopBrowserWeblabTreatment=C&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0">
+            Amazon</a> also an ecommerce website is from which reference of form validation is considered.
+        </p>
+
+      </div>
+
+      <div class="content3">
+        Analysis
+
+
+
+        <div class="images">
+          <div class="photo">
+            Source Website
+            <fig>
+              <a
+                href="https://www.amazon.com/ap/register?showRememberMe=true&openid.pape.max_auth_age=0&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&mobileBrowserWeblabTreatment=C&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_custrec_signin&prevRID=FR83KFF2RJAVA7TCGW19&openid.assoc_handle=usflex&openid.mode=checkid_setup&desktopBrowserWeblabTreatment=C&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0">
+                <img src="../images/amazonfv.png" alt="images">
+              </a>
+              <figcaption style="text-align: center;"> Fig.7 Amazon Signin Page </figcaption>
+            </fig>
+          </div>
+
+          <div class="photo">
+            Lastrada
+            <fig>
+              <img src="../images/FMJS.png" alt="images">
+              <figcaption style="text-align: center;"> Fig.8 JavaScript of Lastrada </figcaption>
+            </fig>
+          </div>
+        </div>
+        <div>
+          <ins>Similarities & Differences</ins> <br>
+          <table border="1px">
+            <tr>
+
+              <th>Similarities</th>
+              <th>Differences</th>
+            </tr>
+
+            <tr>
+
+              <td> Both websites records the input from users and check for form validation. </td>
+              <td>In amazon a new display message appears in red to notify users of the missing data .
+                Lastrada uses popup method to notify users about the missing data.</td>
+            </tr>
+
+
+
+          </table>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="content3">
+      Conclusion
+      <div class="content4">
+        Improper validation of form data is one of the main causes of security vulnerabilities leading to attacks such
+        as header injections, cross-site scripting, and SQL injections.
+        Form Validation helps to prevent online form abuse by malicious users.
+
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+  </div>
+
+  <div class="content2">
+    <h3 id="Part7">Linear Gradient</h3>
+    <div>
+      In CSS, the linear-gradient() function creates an image consisting of a progressive transition between
+      two or more colors along a straight line.
+      <div class="content3">
+        Requirements
+        <p class="content4">To make our webpage outstanding than the competitors in design. </p>
+      </div>
+
+      <div class="content3">
+        Research
+        <p class="content4"> Different methods of designs were drawn in figma in order to gain that competitive
+          advantages over
+          ecommerce websites dealing in camera equipment. Many websites were studied and finally a website by the name
+          of webflow.com
+          <a href="https://webflow.com/made-in-webflow/website/pixelfleek-llc">
+            webflow.com</a> was picked for the purpose of selection of layout style.
+        </p>
+      </div>
+
+      <div class="content3">
+        Analysis
+
+
+
+        <div class="images">
+          <div class="photo">
+            Source Website : WebFlow
+            <fig>
+              <a href="https://webflow.com/made-in-webflow/website/pixelfleek-llc">
+                <img src="../sus.jpeg" alt="images">
+              </a>
+              <figcaption style="text-align: center;"> Fig.9 BnH webpage </figcaption>
+            </fig>
+          </div>
+
+          <div class="photo">
+            Lastrada
+            <fig>
+              <img src="../images/FlexMethod.png" alt="images">
+              <figcaption style="text-align: center;"> Fig.10 Linear gradient code of Lastrada </figcaption>
+            </fig>
+          </div>
+        </div>
+        <div>
+          <ins>Similarities & Differences</ins> <br>
+          <table border="1px">
+            <tr>
+
+              <th>Similarities</th>
+              <th>Differences</th>
+            </tr>
+
+            <tr>
+
+              <td> Both websites uses neon color for better display. </td>
+              <td>LaStrada uses neon color on border with linear gradient for captivating design.</td>
+            </tr>
+
+
+
+          </table>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="content3">
+      Conclusion
+      <div class="content4">
+        The following are some benefits of having a better-looking website:<br>
+
+        It can make a great first impression and give people comfort that you’re a real business.
+        It can showcase your brand to your prospective customers.
+        It can help you stand out from your competitors.
+        It can improve user experience and increase engagement
+      </div>
+
+
+    </div>
+
+    <p>
+
+    </p>
+  </div>
+
+  </div>
+
+  <h3 id="Part8">III. Summary <br>
+    <div class="content3">
+      <p class="content4">A Research section displaying and contrasts the components used on the website against
+        those used on a website investigated for research purposes are discussed thoroughly hinting towards the process
+        that went by during the coursework.
+
+        A proper research was then conducted on the said requirement followed by analysis to
+        understand the component used in the referenced website which allowed us to implement the said tool in our own
+        website.
+        At the end of the research and its immplementation a conclusion was delivered to discuss the learning curve
+        during the process.
+      </p>
+    </div>
+
+
+
+
+  </h3>
+  <div class="content">
+
+    <p>
+
+    </p>
+  </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer>
+    <div class="footer-icons">
+      <div class="footer-a"><a href=""><img src="/images/instagram.png" alt=""></a></div>
+      <div class="footer-a"><a href=""><img src="/images/twitter.png" alt=""></a></div>
+      <div class="footer-a"><a href=""><img src="/images/linkedin.png" alt=""></a></div>
+      <div class="footer-a"><a href=""><img src="/images/youtube.png" alt=""></a></div>
+    </div>
+    <div class="footer-text">
+      <p>© 2021 La Strada. All Rights Reserved by London Metro University.</p>
+      <p>Privacy Policy</p>
+  </footer>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+body {
+    background: rgba(0, 0, 0, 0.7) url("/images/creativeupstarrybg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    background-position: center;
+    color: aliceblue;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 100px;
+}
+
+header img {
+    position: relative;
+    top: 30px;
+    left: -80px;
+    width: 400px;
+    aspect-ratio: 1/1;
+}
+
+nav {
+    margin: 0px 80px;
+    padding: 5px;
+    border-image: linear-gradient(to right, #8A6DFF, #FF8A8A) 1;
+    border-bottom: 2px solid #8A6DFF;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 65.6px;
+    margin: 0;
+    padding-inline-start: 0%;
+}
+
+nav ul li a {
+    font-family: "Cinzel", sans-serif;
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+    font-size: 25px;
+    position: relative;
+    align-self: center;
+    font-weight: 600;
+    transition: .5s;
+}
+
+nav ul li a.active {
+    color: #EEA35E;
+    transition: 1s;
+}
+
+nav ul li a.active:hover {
+    color: #EEA35E;
+}
+
+nav ul li a:hover {
+    color: #8A6DFF;
+    transition: 1s;
+}
+
+#Part8 {
+    margin: 20px 70px;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    height: 20%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.footer-a {
+    margin: 2px;
+}
+
+.footer-a img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    transition: 1s;
+    border: none;
+    padding: 0;
+}
+
+.footer-icons:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-text p {
+    position: relative;
+    font-family: "Bebas Neue";
+    margin-bottom: 5px;
+    margin-top: 0;
+    justify-content: center;
+    font-size: 22px;
+}

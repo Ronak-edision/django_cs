@@ -1,0 +1,254 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the page -->
+    <title>La Strada</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- Internal stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Styling for h1*/
+        h1 {
+            font-family: 'Havana';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 180px;
+            line-height: 170px;
+            background: linear-gradient(180deg, #8A6DFF 22.58%, #CE8D4F 67.73%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Styling for h2*/
+        h3 {
+            font-family: 'ASTRO';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 119px;
+        }
+
+        /* Styling for h3*/
+        h4 {
+            font-family: "Bebas Neue";
+            font-weight: 300;
+            font-size: 25px;
+            line-height: 24px;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 6.56px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--Overlay Div-->
+    <div class="overlay"></div>
+    <!--Wrapper Div-->
+    <div class="wrapper">
+        <!--Header Div-->
+        <header>
+            <!--Logo-->
+            <a href="{% url 'index' %}">
+                <img src="{% static 'images/lastrada.svg' %}" alt="LaStrada Logo" width="60%">
+            </a>
+            <!--Navigation-->
+            <nav>
+                <ul>
+                    <li><a href="{% url 'index' %}" class="active">Home</a></li>
+                    <li><a href="{% url 'blog' %}">Blog</a></li>
+                    <li><a href="{% url 'aboutus' %}">About Us</a></li>
+                    <li><a href="{% url 'product_camera' %}">Products</a></li>
+                    <li><a href="{% url 'research' %}">Research</a></li>
+                    <li><a href="{% url 'product_cart' %}"><span>0</span><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--Main Div-->
+        <main>
+
+            <div class="left-col">
+                <div class="left-col-top">
+                    <div class="left-top-left">
+                        <h2>CAPTURE</h2>
+                        <div class="left-top-right">
+                            <div class="slidercounter">
+                                <h4>01</h4>
+
+                                <h4>/</h4>
+
+                                <h4>03</h4>
+                            </div>
+                            <div class="left-top-right-bottom">
+                                <h3>YOUR</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="left-col-bottom">
+                    <h1>WORLD</h1>
+                    <div class="cta-btn">
+
+                        <a href="{% url 'launch' %}">Latest </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-col">
+                <img src="{% static 'images/transcam.png' %}" alt="">
+                <div class="boxes-behind-img">
+                </div>
+            </div>
+
+        </main>
+        <!--Categories Div-->
+        <div class="categories">
+            <div style="
+            font-size: 100px;
+            line-height: 64px;
+            font-family: 'Havana';
+            background: linear-gradient(180deg, #8A6DFF 22.58%, #CE8D4F 50%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;   
+            ">
+                Categories
+            </div>
+            <!--Feature Div-->
+            <section id="feature" class="section-p1">
+
+                <div class="fe-box">
+                    <a href="{% url 'product_camera' %}"> <img src="{% static 'images/camera.png' %}" alt="img">
+                        <h6>Camera</h6>
+                    </a>
+                </div>
+
+                <div class="fe-box">
+                    <a href="{% url 'product_lens' %}"> <img src="{% static 'images/cameralens.png' %}" alt="img">
+                        <h6>Lens</h6>
+                    </a>
+                </div>
+
+                <div class="fe-box">
+                    <a href="{% url 'product_equipment' %}"> <img src="{% static 'images/cameraequipment.png' %}"
+                            alt="img">
+                        <h6>Equipments</h6>
+                    </a>
+                </div>
+
+                <div class="fe-box">
+                    <a href="{% url 'product_accessories' %}"> <img src="{% static 'images/drone1.png' %}" alt="img">
+                        <h6>Accessories</h6>
+                    </a>
+                </div>
+            </section>
+        </div>
+        <section class="aboutus">
+            <div style="
+            font-size: 100px;
+            line-height: 64px;
+            font-family: 'Havana';
+            background: linear-gradient(180deg, #8A6DFF 22.58%, #CE8D4F 50%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;   
+            ">
+                Meet the Minds Behind the Madness
+            </div>
+            <div class="members">
+                <div class="member">
+                    <h8><a href="{% url 'cv_sushant' %}"> Sushant Hona</a></h8>
+                    <h6>UI/UX Head</h6>
+                </div>
+                <div class="member">
+                    <h9><a href="{% url 'cv_nischal' %}">Nischal Shrestha</a></h9>
+                    <h6>Developer</h6>
+                </div>
+                <div class="member">
+                    <h10><a href="{% url 'cv_ronak' %}">Ronak Krishna Shrestha</a></h10>
+                    <h6>CEO</h6>
+                </div>
+                <div class="member">
+                    <h9><a href="{% url 'cv_aakarshan' %}">Akarshan Khadka</a></h9>
+                    <h6>Marketing Head</h6>
+                </div>
+                <div class="member">
+                    <h8><a href="{% url 'cv_tsewang' %}">Tsewang Gurung</a></h8>
+                    <h6>Blogger</h6>
+                </div>
+            </div>
+        </section>
+        <section class="blog">
+            <div style="
+            font-size: 100px;
+            line-height: 64px;
+            font-family: 'Havana';
+            background: linear-gradient(180deg, #8A6DFF 22.58%, #CE8D4F 50%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;   
+            ">
+                Blog
+            </div>
+           {% for feature in features %}
+            <div style="font-size: 40px;
+            margin: 0px 200px 0 200px;
+            font-family: 'Havana';
+            background: linear-gradient(180deg, #8A6DFF 22.58%, #CE8D4F 50%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            padding: 10px;
+            display: flex;
+            align-items: center;" class="blog-portion">
+                {{feature.name}}
+            </div>
+            <p style="font-family: monospace;">{{feature.detail}}</p>
+            <div class="button">
+                <a href="{% url 'blog' %}">Read More</a>
+            </div>
+           {% endfor %}
+        </section>
+        <footer>
+            <div class="footer-icons">
+                <div class="footer-a"><a href=""><img src="{% static 'images/instagram.png' %}" alt=""></a></div>
+                <div class="footer-a"><a href=""><img src="{% static 'images/twitter.png' %}" alt=""></a></div>
+                <div class="footer-a"><a href=""><img src="{% static 'images/linkedin.png' %}" alt=""></a></div>
+                <div class="footer-a"><a href=""><img src="{% static 'images/youtube.png' %}" alt=""></a></div>
+            </div>
+            <div class="footer-text">
+                <p>© 2023 La Strada. All Rights Reserved by London Metro University.</p>
+                <p>Privacy Policy</p>
+                <div class="button ">
+                    <a href="{% url 'form2' %}">Sign Up</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Include your JavaScript scripts here -->
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Submit Button</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="{% static 'css/form2.css' %}" />
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="color: aliceblue; font-family: 'Havana' ;">LaStrada</h1>
+        <input type="text" placeholder="Username" id="username" />
+        <p class="para">Minimum 3 characters </p>
+        <input type="password" placeholder="Password" id="password" />
+        <p class="para">Minimum 8 characters with special characters </p>
+        <button id="submit">Sign In</button>
+        <p id="message-ref">Signed Up Successfully!</p>
+    </div>
+    <!-- Script -->
+    <script src="{% static 'js/form2.js' %}"></script>
+</body>
+
+</html>
